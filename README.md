@@ -50,10 +50,10 @@ images/alert_workflow.png
 
 ## 🔥 Key Features
 
-✅ AI Anomaly Detection
-✅ Explainable RCA (SHAP)
-✅ Real-Time Alerting
-✅ Dashboard Integration
+- ✅ AI Anomaly Detection
+- ✅ Explainable RCA (SHAP)
+- ✅ Real-Time Alerting
+- ✅ Dashboard Integration
 
 ---
 
