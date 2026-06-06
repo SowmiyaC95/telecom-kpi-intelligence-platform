@@ -1,0 +1,76 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+telecom_env/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs & temp files
+# =========================
+*.log
+*.tmp
+*.temp
+
+# =========================
+# Data files (optional)
+# =========================
+# Uncomment if dataset is large/sensitive
+# data/*.csv
+# data/*.xlsx
+
+# =========================
+# Model files (optional)
+# =========================
+*.pkl
+*.joblib
+*.model
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+secrets.json
+
+# =========================
+# Build / distribution
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Jupyter widgets (optional)
+# =========================
+*.nbconvert.ipynb
+
+# =========================
+# Cache
+# =========================
+.cache/
