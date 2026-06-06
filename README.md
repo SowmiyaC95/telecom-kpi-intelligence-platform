@@ -23,3 +23,7 @@ Telecom networks generate massive KPI data:
 - Alerting (Real-time)
 
 ---
+
+## 🏗️ Architecture
+
+![Architecture](images/architecture.png)
