@@ -30,53 +30,53 @@ Modern telecom networks generate massive KPI data such as:
 
 ---
 
-## 🏗️ Architecture Overview
+## 🏗️ Architecture Diagram
 
-images/architecture_diagram.png
-
+```text
 ┌───────────────────────────────┐
-                     │     📡 Telecom KPI Data       │
-                     │ (4G/5G Counters, OSS, Logs)  │
-                     └───────────────┬───────────────┘
-                                     │
-                                     ▼
-                     ┌───────────────────────────────┐
-                     │ 🧹 Data Processing & KPI Engine│
-                     │ (CSSR, DCR, Latency, SINR)   │
-                     └───────────────┬───────────────┘
-                                     │
-                                     ▼
-        ┌────────────────────────────────────────────────────────────┐
-        │                  🤖 AI ANALYTICS ENGINE                      │
-        │                                                            │
-        │  ┌────────────────────┐  ┌────────────────────┐            │
-        │  │ 🔍 Anomaly Detection│  │ 🌲 RCA Model        │            │
-        │  │ Isolation Forest    │  │ Random Forest      │            │
-        │  └──────────┬─────────┘  └──────────┬─────────┘            │
-        │             ▼                        ▼                      │
-        │        ┌────────────────────────────────────┐               │
-        │        │ 🧠 Explainable AI (SHAP)           │               │
-        │        │ Root Cause Identification          │               │
-        │        └────────────────────────────────────┘               │
-        └───────────────┬────────────────────────────────────────────┘
-                        │
-                        ▼
-         ┌──────────────────────────────────────────────┐
-         │ 📊 Insights Engine                          │
-         │ Root Cause + Severity + Ranking             │
-         └───────────────┬───────────────┬─────────────┘
-                         │               │
-          ┌──────────────┘               └──────────────┐
-          ▼                                             ▼
-┌───────────────────────┐              ┌────────────────────────┐
-│ 🚨 Alert System        │              │ 📊 Dashboard            │
-│ Email / Teams         │              │ Power BI Visualizations │
-└───────────────────────┘              └────────────────────────┘
+│     📡 Telecom KPI Data (4G/5G Counters, OSS, Logs)  ││     📡 Telecom KPI Data       │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│ 🧹 Data Processing & KPI Engine│
+│ (CSSR, DCR, Latency, SINR)   │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌────────────────────────────────────────────────────────────┐
+│                  🤖 AI ANALYTICS ENGINE                    │
+│                                                          │
+│  ┌────────────────────┐  ┌────────────────────┐          │
+│  │ 🔍 Anomaly Detection│  │ 🌲 RCA Model        │          │
+│  │ Isolation Forest    │  │ Random Forest      │          │
+│  └──────────┬─────────┘  └──────────┬─────────┘          │
+│             ▼                        ▼                    │
+│        ┌────────────────────────────────────┐           │
+│        │ 🧠 Explainable AI (SHAP)           │           │
+│        │ Root Cause Identification          │           │
+│        └────────────────────────────────────┘           │
+└───────────────┬────────────────────────────────────────┘
+                │
+                ▼
+┌──────────────────────────────────────────────┐
+│ 📊 Insights Engine                          │
+│ Root Cause + Severity + Ranking             │
+└───────────────┬───────────────┬─────────────┘
+                │               │
+     ┌──────────┘               └──────────┐
+     ▼                                     ▼
+┌───────────────────────┐   ┌────────────────────────┐
+│ 🚨 Alert System        │   │ 📊 Dashboard            │
+│ Email / Teams         │   │ Power BI Visualizations │
+└───────────────────────┘   └────────────────────────┘
 
-                ┌────────────────────────────┐
-                │ 📁 APIs / Reports          │
-                │ Export / Integration Layer │
-                └────────────────────────────┘
+        ┌────────────────────────────┐
+        │ 📁 APIs / Reports          │
+        │ Export / Integration Layer │
+        └────────────────────────────┘
+
+
 
 ---
 
