@@ -34,6 +34,50 @@ Modern telecom networks generate massive KPI data such as:
 
 images/architecture_diagram.png
 
+┌───────────────────────────────┐
+                     │     📡 Telecom KPI Data       │
+                     │ (4G/5G Counters, OSS, Logs)  │
+                     └───────────────┬───────────────┘
+                                     │
+                                     ▼
+                     ┌───────────────────────────────┐
+                     │ 🧹 Data Processing & KPI Engine│
+                     │ (CSSR, DCR, Latency, SINR)   │
+                     └───────────────┬───────────────┘
+                                     │
+                                     ▼
+        ┌────────────────────────────────────────────────────────────┐
+        │                  🤖 AI ANALYTICS ENGINE                      │
+        │                                                            │
+        │  ┌────────────────────┐  ┌────────────────────┐            │
+        │  │ 🔍 Anomaly Detection│  │ 🌲 RCA Model        │            │
+        │  │ Isolation Forest    │  │ Random Forest      │            │
+        │  └──────────┬─────────┘  └──────────┬─────────┘            │
+        │             ▼                        ▼                      │
+        │        ┌────────────────────────────────────┐               │
+        │        │ 🧠 Explainable AI (SHAP)           │               │
+        │        │ Root Cause Identification          │               │
+        │        └────────────────────────────────────┘               │
+        └───────────────┬────────────────────────────────────────────┘
+                        │
+                        ▼
+         ┌──────────────────────────────────────────────┐
+         │ 📊 Insights Engine                          │
+         │ Root Cause + Severity + Ranking             │
+         └───────────────┬───────────────┬─────────────┘
+                         │               │
+          ┌──────────────┘               └──────────────┐
+          ▼                                             ▼
+┌───────────────────────┐              ┌────────────────────────┐
+│ 🚨 Alert System        │              │ 📊 Dashboard            │
+│ Email / Teams         │              │ Power BI Visualizations │
+└───────────────────────┘              └────────────────────────┘
+
+                ┌────────────────────────────┐
+                │ 📁 APIs / Reports          │
+                │ Export / Integration Layer │
+                └────────────────────────────┘
+
 ---
 
 ## 🤖 AI Pipeline
