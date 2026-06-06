@@ -59,8 +59,32 @@ images/alert_workflow.png
 
 ## 📁 Project Structure
 
-telecom-explainable-ai-platform/
-
+telecom-ai-explainable-platform/
+│
+├── data/
+│   └── telecom_kpi_sample_dataset.csv
+│
+├── notebooks/
+│   ├── telecom_kpi_analysis.ipynb
+│   ├── anomaly_detection.ipynb
+│   └── shap_ai_rca.ipynb
+│
+├── src/
+│   ├── main_pipeline.py
+│   ├── alerting_pipeline.py
+│   └── utils.py
+│
+├── dashboard/
+│   └── powerbi_dashboard_dataset.csv
+│
+├── images/
+│   ├── architecture.png
+│   ├── shap_output.png
+│   └── pipeline_flow.png
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
 ---
 
 ## ⚙️ Installation
